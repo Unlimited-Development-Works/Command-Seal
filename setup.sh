@@ -3,6 +3,8 @@ echo "Updating package definitions"
 sudo apt update
 echo "Upgrading all currently installed packages"
 sudo apt upgrade -y --force-yes
+echo "Installing python dependancies"
+sudo apt-get install -y python-pip python-pygame python-dev
 echo "Adding Adafruit package repository"
 curl -SLs https://apt.adafruit.com/add-pin | sudo bash
 echo "Installing dependancies for Pi TFT"
